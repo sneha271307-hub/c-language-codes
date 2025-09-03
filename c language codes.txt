@@ -1,0 +1,26 @@
+#include<studio.h>
+
+int main()
+
+{
+  printf("hello Sneha\n");
+  
+  retuen 0;
+}
+
+
+
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+    int a,b;
+    a=0;
+    b=0;
+
+    printf("THE ADDITION OF a  ||  b =%d\n" , a||b);
+    printf("THE SUBTRACTION OF a  - b =%d\n",a-b);
+    printf("THE MULTIPLICATION OF a  *b =%d\n",a*b);
+    printf("THE DIVISION OF a  /  b =%d\n",a/b);
+    printf("THE MODULUS OF a  %  b =%d\n",a%b);
+    return 0;
+}
