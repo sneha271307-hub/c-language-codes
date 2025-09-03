@@ -1,0 +1,9 @@
+#include<studio.h>
+
+int main()
+
+{
+  printf("hello Sneha\n");
+  
+  retuen 0;
+}
