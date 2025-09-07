@@ -14,3 +14,26 @@ printf("a * b = %d\n" , a * b);
 return 0;
 
 }
+
+
+
+if we add float then what code looks like
+
+
+#include <stdio.h>
+
+int main()
+{
+int a;
+float b;
+a = 2;
+b = 9;
+
+printf("a + b = %f\n" , a + b);
+printf("a - b = %f\n" , a - b);
+printf("a / b = %f\n" , a / b);
+printf("a * b = %f\n" , a * b);
+
+return 0;
+
+}
