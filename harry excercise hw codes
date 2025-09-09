@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main()
+{
+int a;
+printf( "enter how many subjects you passed:\n");
+printf("enter 1 for pass in maths\n");
+printf("enter 2 for pass in science\n");
+printf("enter 3 for pass in boths\n");
+scanf("%d" , &a);
+if (a == 1){
+    printf("you passed in maths\n");
+
+    printf("congrats you won $23\n");
+}
+else if ( a == 2){
+    printf("you passed in science\n");
+    printf(" you won $7\n");
+}
+else if ( a == 3){
+    printf("you passed in both\n");
+    printf("you won $7 ");
+}
+return 0;
+
+
+}
