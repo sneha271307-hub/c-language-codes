@@ -24,3 +24,27 @@ return 0;
 
 
 }
+
+
+finding factor of numbers code 
+
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+  int num,factor;
+
+  printf("enter the number for finding factor:");
+  scanf("%d" , &num);
+  printf("enter the factor to check:");
+  scanf("%d" ,&factor );
+
+
+  if (num % factor == 0){
+    printf("the factor of number is here");
+
+  }
+ else if( factor % 2 == 0) {
+  printf(" the factor of number is even here");
+ }
+ return 0;
+}
