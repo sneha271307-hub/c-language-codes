@@ -12,3 +12,67 @@ int main()
 
 
 }
+
+switch case code:
+
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+    int age;
+    printf("enter your age\n");
+    scanf("%d" , &age);
+    switch (age)
+    {
+    case 18:
+    
+        printf("your age is perfect");
+        break;
+    
+     default:
+     printf("your age is not 18 sorry");
+    }   
+
+return 0;  
+    
+}
+
+
+nested switch case:
+
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+    int age , marks;
+
+    printf("enter your age\n");
+    scanf("%d" , &age);
+printf("enter your marks\n");
+    scanf("%d" , &marks);
+
+    switch (age)
+    {
+    case 18:
+    
+        printf("your age is perfect\n");
+        switch (marks)
+        {
+        case 28:
+            printf("your marks is 28\n");
+            break;
+        
+        default:
+        printf("your marks is not here\n");
+            break;
+        }
+     break;
+
+     default:
+     printf("your age is not 18 sorry");
+    }   
+
+return 0;  
+    
+}
+
+
+
