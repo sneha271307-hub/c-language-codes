@@ -31,8 +31,49 @@ int main(int argc, char const *argv[])
 
         } 
 
+break code;
+
+
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{ 
+    printf("hello world\n");
+    int i , age;
+    for (int i = 0; i < 10; i++)
+    {
+        printf("%d enter your age\n" , i);
+        scanf("%d" , &age);
+        if(age>10){
+            break;
+        }
+    }
+    
+
+    return 0;
+}
+
+
+continue code;
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{ 
+    printf("hello world\n");
+    int i , age;
+    for (int i = 0; i < 10; i++)
+    {
+        printf("%d enter your age\n" , i);
+        scanf("%d" , &age);
+        if(age>10){
+            continue;
+        }
+    } printf("we have no accross any state\n");
+    
+
+    return 0;
+}
+
         
-    } end:
+    
 
     return 0;
 }
