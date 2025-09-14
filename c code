@@ -78,3 +78,49 @@ int main(int argc, char const *argv[])
     return 0;
 }
 
+funtions code;
+
+#include <stdio.h>
+int sum(int a , int b);
+void printstar(int n)
+{
+for (int i = 0; i < n; i++)
+{
+    printf("%c" ,'*');
+}
+
+}
+int main()
+{
+int a , b , c;
+a = 9;
+b = 29;
+c = sum(a , b);
+printstar(7);
+return 0;
+
+}
+int sum(int a , int b){
+    return a + b;
+}
+
+
+if i want to call funtion after then i have to define my funtion like this;
+
+#include <stdio.h>
+int sum(int a , int b);  // here i define my code 124 line this is not necessary but if write funtion there then you got error  that is why
+
+int main()
+{
+int a , b , c;
+a = 9;
+b = 29;
+c = sum(a , b);
+printf("the sum is %d\n" , c);
+
+return 0;
+
+}
+int sum(int a , int b){
+    return a + b;
+}
