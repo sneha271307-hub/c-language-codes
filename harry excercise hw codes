@@ -48,3 +48,18 @@ int main(int argc, char const *argv[])
  }
  return 0;
 }
+
+
+multiplication of table
+
+#include<stdio.h>
+int main()
+{
+int num;
+printf("enter the multiplication number:\n");
+scanf("%d" , &num);
+printf("multiplication of table %d:\n" , num);
+printf("%d * 1 = %d",num,num*1); //here add all multiplications from where you want;
+return 0;
+
+}
