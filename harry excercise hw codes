@@ -63,3 +63,76 @@ printf("%d * 1 = %d",num,num*1); //here add all multiplications from where you w
 return 0;
 
 }
+
+////sum and avg of marks;;;;
+
+#include <stdio.h>
+int main(){
+
+    int s1,s2,s3,s4,s5;
+    int sum;
+    float avg;
+    printf("enter the marks of s1,s2,s3,s4,s5:\n");
+    scanf("%d %d %d %d %d",&s1,&s2,&s3,&s4,&s5);
+    sum = s1+s2+s3+s4+s5;
+    avg = s1+s2+s3+s4+s5/5;
+    printf("sum of marks is =%d\n",sum);
+    printf("avg of marks = %f\n",avg);
+    return 0;
+
+}
+
+// same problem by using switch 
+
+
+#include <stdio.h>
+int main(){
+
+    int s1,s2,s3,s4,s5;
+    int sum;
+    float avg;
+    int c;
+    printf("enter the marks of s1,s2,s3,s4,s5:\n");
+    scanf("%d %d %d %d %d",&s1,&s2,&s3,&s4,&s5);
+    sum = s1+s2+s3+s4+s5;
+    avg = s1+s2+s3+s4+s5/5;
+    printf("enter 1 for sum of marks:\n",sum);
+    printf("enter 2 for avg of marks:\n",avg);
+    scanf("%d",&c); // take into c when you want any choice in code you have to make a separte variable for that
+    
+    switch (c)
+    {
+    case 1:
+        printf("sum of marks is =%d\n", sum);
+        break;
+    case 2:
+        printf("avg of marks is =%f\n",avg);
+    
+    default:
+    printf("invalid error");
+        break;
+    }
+    return 0;
+
+}
+
+
+//simple interst code
+#include <stdio.h>
+float simpleinterst(int a,int b,int c)
+{
+    return a*b*c/100;
+}
+int main()
+{
+float a;
+float b;
+float c;
+float num;
+printf("enter number for S.I:\n");
+scanf("%f %f %f",&a,&b,&c);
+num = a*b*c/100;
+printf("the simple inetrst is %f\n",num);
+return 0;
+
+}
