@@ -136,3 +136,26 @@ printf("the simple inetrst is %f\n",num);
 return 0;
 
 }
+
+// finding which is greater code
+
+#include <stdio.h>
+
+int main(){
+
+int a;
+int b;
+printf("enter the numbers you want to check greater:\n");
+scanf("%d %d",&a,&b);
+if(a>b){
+    printf("the a  (%d\n) is bigger than b (%d\n)",a,b);
+}
+else if(b>a){
+    printf("the b (%d\n) is greater then a (%d\n)",a,b);
+}   // if i will not use that (%d\n) then it also shows me some garbage values so make sure you use this/
+
+else {
+    printf("Both are equal: %d and %d\n", a, b);
+}
+return 0;
+}
