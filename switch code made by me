@@ -46,3 +46,73 @@ int main(){
      return 0;
 
 }
+
+\\ bodmas code by using switch;
+
+#include <stdio.h>
+
+int main(){
+     int a,b;
+     int bracket_a;
+     int bracket_b;
+     int exponent_a;
+     int exponent_b;
+     int divide;
+     int multiplication;
+     int sum;
+     int subtraction;
+     int c;
+     printf("enter the numbers for using bodmas:\n");
+     scanf("%d %d",&a,&b);
+     bracket_a = (a);
+     bracket_b = (b);
+     exponent_a = (a*a);
+     exponent_b = (b*b);
+     divide = (a/b);
+     multiplication = (a*b);
+     sum = a+b;
+     subtraction = a-b;
+     printf("the bracket of numbers = (%d\n)",bracket_a);
+     printf("the bracket of numbers = (%d\n)",bracket_b);
+     printf("the exponent of numbers = (%d\n)",exponent_a);
+     printf("the exponent of numbers = (%d\n)",exponent_b);
+     printf("the divide of numbers = (%d\n)",divide);
+     printf("the multiplication of numbers =(%d\n)",multiplication);
+     printf("the sum of numbers = (%d\n)",sum);
+     printf("the subtraction of numbers = (%d\n)",subtraction);
+     scanf("%d" ,&c);
+     switch (c)
+     {
+     case 1:
+     printf("the sum of numbers (%d\n)",sum);
+        break;
+     case 2:
+     printf("the the subtraction of numbers (%d\n)",subtraction);
+     break;
+     case 3:
+     printf("the bracket of numbers = (%d\n)",bracket_a);
+     break;
+     case 4:
+     printf("the bracket of numbers = (%d\n)",bracket_b);
+    break;
+     case 5:
+     printf("the exponent of numbers = (%d\n)",exponent_a);
+     break;
+     case 6:
+     printf("the exponent of numbers = (%d\n)",exponent_b);
+     break;
+     case 7:
+     printf("the multiplication of numbers (%d\n)",multiplication);
+     break;
+    case 8:
+    printf("the divide of numbers = (%d\n)",divide);
+    break;
+
+     default:
+     printf("the enterd number is invalid");
+        break;
+     }
+
+     return 0;
+
+}
