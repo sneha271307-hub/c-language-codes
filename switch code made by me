@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main(){
+     int a,b;
+     float area_tri;
+     int area_square;
+     int sum;
+     int multiplication;
+     int subtraction;
+     int c;
+     printf("enter the numbers for:\n");
+     scanf("%d %d",&a,&b);
+     sum = a+b;
+     subtraction = a-b;
+     area_tri = 0.5*(a*b);
+     area_square= pow(a,2);
+     multiplication = a*b;
+     printf("the sum of numbers = (%d\n)",sum);
+     printf("the subtraction of numbers = (%d\n)",subtraction);
+     printf("the area_tri of numbers = (%f\n)",area_tri);
+     printf("the area_square of numbers = (%d\n)",area_square);
+     printf("the multiplication of numbers = (%d\n)",multiplication);
+     scanf("%d" ,&c);
+     switch (c)
+     {
+     case 1:
+     printf("the sum of numbers (%d\n)",sum);
+        break;
+     case 2:
+     printf("the the subtraction of numbers (%d\n)",subtraction);
+     break;
+     case 3:
+     printf("the area of numbers (%f\n)",area_tri);
+     break;
+     case 4:
+     printf("the area of numbers (%d\n)",area_square);
+     break;
+     case 5:
+     printf("the multiplication of numbers (%d\n)",multiplication);
+     break;
+
+     default:
+        break;
+     }
+
+     return 0;
+
+}
