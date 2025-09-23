@@ -204,3 +204,50 @@ int main(int argc, char const *argv[])
     return 0; 
 
 }
+// if you want a code with menu enter;
+
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    float km_miles;
+    float kg_g;
+    float inches_meters;
+    float feet_cm;
+    int choice;
+    printf("enter the numbers for conversions:\n");
+    scanf("%d",&num);
+    km_miles = num * 0.621371;
+    kg_g = num * 1000.0;
+    inches_meters = num * 0.0254;
+    feet_cm = num * 30.48;
+    printf("\nchoose your conversion:\n");
+    printf("enter 1 for km to miles of number is\n");
+    printf("enter 2 for kg to g of number is\n");
+    printf("enter 3 for inches to meters of number is\n");
+    printf("enter 4 for feet to cm of number is\n");
+    printf("enter your choice:\n");
+    scanf("%d",&choice);
+    
+    switch (choice)
+    {
+    case 1:
+    printf("conversion for km_miles:(%f\n)",km_miles);
+        break;
+    case 2:
+    printf("conversion for kg_g: (%f\n)",kg_g);
+    break;
+    case 3:
+    printf("conversion for inches_meters: (%f\n)",inches_meters);
+    break;
+    case 4:
+    printf("conversion for feet_cm:(%f\n)",feet_cm);
+        break;
+
+    default:
+        break;
+    }
+    return 0; 
+
+}
