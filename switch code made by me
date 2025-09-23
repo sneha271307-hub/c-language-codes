@@ -116,3 +116,43 @@ int main(){
      return 0;
 
 }
+
+
+#include <stdio.h>
+
+int main(){
+
+int num;
+int choice;
+printf("enter number of food items you want to order:\n");
+scanf("%d",&num);
+
+printf("\nchose your item:\n");
+printf("1.for cholebhature\n");
+printf("2.for rajma\n");
+printf("3.for poha\n");
+printf("4.for namkeen\n");
+scanf("%d",&choice);
+printf("your order is confirmed thanks\n");
+printf("you orderd our best item your choice is good\n");
+
+switch (choice)
+    {
+    case 1:
+    printf("for cholebhature: cholebhature\n");
+        break;
+    case 2:
+    printf("for rajma: rajma\n");
+    break;
+    case 3:
+    printf("poha: poha\n");
+    break;
+    case 4:
+    printf("namkeen: namkeen\n");
+        break;
+    default:
+    break;
+
+    }
+return 0;
+}
