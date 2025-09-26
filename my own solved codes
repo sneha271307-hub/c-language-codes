@@ -1,0 +1,54 @@
+cafe ordering system:
+ 
+ 
+ #include <stdio.h>
+
+
+int main()
+{
+  int num;
+  int menu;
+  int coffe,tea,juice,water;
+  
+  
+
+  printf("Welcome to Cafe Delight!\n");
+  printf("\nhere is your menu\n");
+  printf("1.for coffe\n");
+  printf("2.for tea\n");
+  printf("3.for juice\n");
+  printf("4.for water\n");
+  printf("please select which drink you want:");
+  scanf("%d",&menu);
+  printf("menu items prices\n");
+  printf("the price of coffe is 50 rupess\n");
+  printf("the price of tea is 30 rupess\n");
+  printf("the price of juice is 40 rupess\n");
+  printf("the price of water is 10 rupess\n");
+  printf("how many cups  do you want:");
+  scanf("%d",&num);
+  coffe = 50*num;
+  tea = 30*num;
+  juice = 40*num;
+  water = 10*num;
+  switch (menu)
+  {
+  case 1:
+  
+  printf("num*50\n here is your total bill  of your coffe:  %d\n",coffe,num*50 );
+  break;
+  case 2:
+  printf("num*30\n here is your total bill  of your tea:  %d\n",tea,num*30);
+  break;
+  case 3:
+  printf("num*40\n here is your total bill of your juice:  %d\n",juice,num*40);
+  break;
+  case 4:
+  printf("num*10\n here is your total bill of your water:  %d\n",water,num*10);
+  break;
+  default:
+    break;
+  }
+  printf("thanks for visiting cafe delight\n");
+  return 0;
+}
