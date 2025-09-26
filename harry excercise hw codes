@@ -251,3 +251,27 @@ int main()
     return 0; 
 
 }
+
+
+
+ fibacano code;
+
+ #include <stdio.h>
+int main(void)
+{
+  int i,n,c,a=0,b=1;
+  printf("enter the terms for n:\n");
+  scanf("%d",&n);
+  for ( i = 1; i <= n; i++)
+  {
+    c = a+b;
+    printf("%d\t",a);
+    a=b;
+    b=c;
+
+
+  }
+  
+return 0;
+
+}
