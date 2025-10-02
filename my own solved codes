@@ -52,3 +52,24 @@ int main()
   printf("thanks for visiting cafe delight\n");
   return 0;
 }
+
+
+// pattern codes:
+
+#include <stdio.h>   
+
+int main() 
+{
+    int rows;
+    int coloumn;
+    printf("enter numbers of rows:\n");
+    printf("enter numbers of coloumn:\n");
+    scanf("%d %d", &rows,&coloumn);
+    for(int i=1;i<=rows;i++){
+        for(int j=1;j<=coloumn;j++){
+        printf("*");
+    }
+    printf("\n");
+}
+    return 0;
+}
