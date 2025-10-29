@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+    int marks[] = {98, 99, 22, 23, 45, 46};
+    
+    for(int i = 0; i < 6; i++){  // ✅ use 6, not 35
+        if(marks[i] < 35){
+            printf("%d ", marks[i]);
+        }
+    }
+    
+    return 0;
+}
