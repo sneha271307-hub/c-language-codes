@@ -28,3 +28,21 @@ printf("%d",max);
 return 0;
 
 }
+
+// min value finding from arrays
+
+#include <stdio.h>
+#include <limits.h>
+int main(){
+int arr[7] = { 10,4,45,32,55,2,34};
+int min = INT_MAX;
+for(int i=0;i<7;i++){
+    if(arr[i]<min){
+        min = arr[i];
+    }
+}
+
+printf("%d",min);
+return 0;
+
+}
