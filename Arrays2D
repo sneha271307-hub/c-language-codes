@@ -101,3 +101,89 @@ int main() {
     return 0;
 }
 
+
+SUM OF ARRAYS MATRICES:
+
+
+
+#include <stdio.h>
+
+int main() {
+int r;
+printf("enter the no. of rows:\n");
+scanf("%d",&r);
+int c;
+printf("enter the no. of coloumn:\n");
+scanf("%d",&c);
+int arr[r][c];
+printf("enter elements:\n");
+for(int i = 0;i<r;i++){
+    for(int j = 0;j<c;j++){
+        scanf("%d",&arr[i][j]);
+    }
+}
+printf("\n");
+for(int i = 0;i<r;i++){
+    for(int j = 0;j<c;j++){
+        printf("%d",arr[i][j]);
+    }
+    printf("\n");
+}
+int sum = 0;
+for(int i = 0;i<r;i++){
+
+    for(int j = 0;j<c;j++){
+        sum += arr[i][j];
+    }
+}
+printf("the sum of elements is %d",sum);
+return 0; 
+
+}
+
+PRINT ROW NUMBER HAVING MAX SUM IN MATRIX: // PREETY DIFFICULT
+
+#include <stdio.h>
+
+int main() {
+int r;
+printf("enter the no. of rows:\n");
+scanf("%d",&r);
+int c;
+printf("enter the no. of coloumn:\n");
+scanf("%d",&c);
+int arr[r][c];
+printf("enter elements:\n");
+for(int i = 0;i<r;i++){
+    for(int j = 0;j<c;j++){
+        scanf("%d",&arr[i][j]);
+    }
+}
+printf("\n");
+for(int i = 0;i<r;i++){
+    for(int j = 0;j<c;j++){
+        printf("%d ",arr[i][j]);
+    }
+    printf("\n");
+}
+int maxSum = 0, rowNum = 0;
+
+    for (int i = 0; i < r; i++) {
+        int sumRow = 0;
+        for (int j = 0; j < c; j++) {
+            sumRow += arr[i][j];
+        }
+
+        if (i == 0 || sumRow > maxSum) {
+            maxSum = sumRow;
+            rowNum = i;
+        }
+    }
+
+    printf("\nRow %d has the maximum sum = %d\n", rowNum, maxSum);
+
+ return 0;
+}
+    
+
+
