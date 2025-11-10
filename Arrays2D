@@ -184,6 +184,45 @@ int maxSum = 0, rowNum = 0;
 
  return 0;
 }
+
+//convert into transpose matrix:
+
+#include <stdio.h>
+
+int main() {
+int r;
+printf("enter the no. of rows:\n");
+scanf("%d",&r);
+int c;
+printf("enter the no. of coloumn:\n");
+scanf("%d",&c);
+int arr[50][50],trr[50][50];
+//input matrix
+printf("enter elements:\n");
+for(int i = 0;i<r;i++){
+    for(int j = 0;j<c;j++){
+        scanf("%d",&arr[i][j]);
+    }
+}
+//transpose
+
+for(int i = 0;i<r;i++){
+    for(int j = 0;j<c;j++){
+        trr[j][i] = arr[i][j];
+    }
+}
+//output transpose
+printf("transpose of matrix:\n");
+for(int i = 0;i<c;i++){
+    for(int j = 0;j<r;j++){
+        printf("%d ",trr[i][j]);
+    }
+printf("\n");
+}
+ return 0;
+
+}
     
+
 
 
